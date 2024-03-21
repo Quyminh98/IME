@@ -1,0 +1,265 @@
+:root {
+  font-family: Kanit;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+
+}
+
+
+#myVideo {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -100;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.socials {
+  display: inline-block;
+  color: #FFF;
+  font-size: 16px;
+  margin-right: 44px;
+  margin-left: 44px;
+  font-family: Kanit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 150px;
+}
+
+.logo {
+  display: block;
+  margin-top: 8px;
+}
+
+.logo-hidden {
+  visibility: hidden
+}
+
+.content {
+  margin: auto;
+  max-width: 676px;
+  padding: 32px;
+  border-radius: 20px;
+  border-top: 4px solid #31B3FF;
+  background: rgba(0, 0, 0, 0.30);
+  backdrop-filter: blur(10px);
+}
+
+.tokenomic {
+  display: flex;
+  padding: 20px 48px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.tokenomic__title {
+  color: #FFF;
+  font-family: Kanit;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+.tokenomic__key {
+  display: inline-block;
+  margin-right: 8px;
+  color: #FFF;
+  text-align: center;
+  font-family: Kanit;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  /* 166.667% */
+}
+
+.tokenomic__value {
+  display: inline-block;
+  color: #31B3FF;
+  font-family: Kanit;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+.description {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 12px;
+  border: 1px solid rgba(49, 179, 255, 0.20);
+  background: rgba(255, 255, 255, 0.10);
+}
+
+
+.description__content {
+  color: #FFF;
+  text-align: center;
+  font-family: Kanit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.footer {
+  position: fixed;
+  display: flex;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 56px;
+  padding: 8px 8px;
+  background: rgba(255, 255, 255, 0.05);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer__content {
+  color: var(--Secondary-550, #A4A4A4);
+  font-family: Kanit;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+  /* 142.857% */
+  letter-spacing: 0.28px;
+}
+
+@media (max-width: 1440px) {
+  .header {
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .logo-hidden {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    max-width: 300px;
+  }
+
+  .header {
+    margin-bottom: 80px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .socials__list {
+    display: flex;
+  }
+
+  .socials {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 380px) {
+  .header {
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    display: none;
+  }
+}
+
+
+@font-face {
+  font-family: "Kanit";
+  src:
+    local("Kanit"),
+    url("./assets/fonts/Kanit/Kanit-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Kanit";
+  src:
+    local("Kanit"),
+    url("./assets/fonts/Kanit/Kanit-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Kanit";
+  src:
+    local("Kanit"),
+    url("./assets/fonts/Kanit/Kanit-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Kanit";
+  src:
+    local("Kanit"),
+    url("./assets/fonts/Kanit/Kanit-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
